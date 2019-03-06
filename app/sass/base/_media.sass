@@ -5,6 +5,10 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+  .s-intro
+    h1
+      font-size: 42px
+
   .main-mnu
     display: none
   #mmenu-btn
@@ -12,12 +16,27 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+  .s-intro
+    padding-bottom: 300px
+    h1
+      font-size: 36px
 
 // ≥768px
 +media-breakpoint-down(sm)
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-intro
+    padding-bottom: 200px
+    .btn
+      margin-bottom: 15px
+    h1
+      font-size: 30px
+
+  .main-head
+    margin-bottom: 30px
+
   header
     padding-bottom: 50px
 
@@ -25,7 +44,7 @@
     float: none
     position: absolute
     right: 15px
-    bottom: 15px
+    bottom: -30px
   #mmenu-btn
     margin-right: 0
 
