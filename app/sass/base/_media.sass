@@ -5,6 +5,10 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+  .main-mnu
+    display: none
+  #mmenu-btn
+    display: inline-block
 
 // ≥992px
 +media-breakpoint-down(md)
@@ -14,7 +18,26 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+  header
+    padding-bottom: 50px
 
+  .lang
+    float: none
+    position: absolute
+    right: 15px
+    bottom: 15px
+  #mmenu-btn
+    margin-right: 0
+
+  .jq-selectbox__select
+    padding: 5px 20px 5px 12px
+
+  .jq-selectbox__trigger-arrow
+    top: 13px
+    right: 13px
+
+  .jq-selectbox__select-text
+    font-size: 14px
 
 /*==========  Mobile First  ==========*/
 

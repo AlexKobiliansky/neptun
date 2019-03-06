@@ -39,7 +39,9 @@ gulp.task('styles', function() {
 gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
-		// 'app/libs/pixel-glass/pixel-glass.js',
+		'app/libs/smartmenus/jquery.smartmenus.min.js',
+		'app/libs/formstyler/jquery.formstyler.min.js',
+		'app/libs/mmenu/jquery.mmenu.all.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
