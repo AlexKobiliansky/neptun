@@ -49,6 +49,23 @@ $(function() {
      * end mobile-mnu customization
      */
 
+    $( ".tabs-wrap" ).tabs();
+
+    function heightses() {
+        if ($(window).width()>=768) {
+            $('.subtab-item-title').height('auto').equalHeights();
+            $('.subtab-item-desc').height('auto').equalHeights();
+        }
+
+    }
+
+    $(window).resize(function() {
+        heightses();
+    });
+
+    heightses();
+
+
     //E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);
