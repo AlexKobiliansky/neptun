@@ -107,6 +107,7 @@ $(function() {
             $('.project-item-title').height('auto').equalHeights();
             $('.caseclient-item-img').height('auto').equalHeights();
             $('.caseclient-item-title').height('auto').equalHeights();
+            $('.sert-item-wrap').height('auto').equalHeights();
         }
 
         $('.client-slide').height('auto').equalHeights();
@@ -121,6 +122,7 @@ $(function() {
     heightses();
 
     $('.section-gallery-wrap').photoswipe();
+    $('.sert-gallery').photoswipe();
 
 
     //E-mail Ajax Send
