@@ -96,7 +96,7 @@ $(function() {
 
     heightses();
 
-
+    $('.section-gallery-wrap').photoswipe();
 
 
     //E-mail Ajax Send
