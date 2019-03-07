@@ -1,0 +1,61 @@
+.s-projects
+  padding-top: 70px
+  padding-bottom: 50px
+
+.project-item
+  border-radius: 5px
+  overflow: hidden
+  margin-bottom: 30px
+  display: block
+  color: $text
+  &-img
+    +bg-cover
+    background-color: #bac9cd
+    height: 180px
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    &:after
+      position: absolute
+      content: ''
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0
+      background-color: #000
+      opacity: 0
+      +mt(.5s)
+    .btn
+      position: relative
+      z-index: 2
+      opacity: 0
+      +mt(.5s)
+      &:hover
+        background-color: transparent
+  &-content
+    display: block
+    background-color: #fff
+    padding: 20px
+  &-title
+    color: $accent
+    display: block
+    font-weight: 500
+    font-size: 17px
+    margin-bottom: 12px
+    line-height: 1.2
+  &-desc
+    font-size: 12px
+    line-height: 17px
+    display: block
+    height: 51px
+    overflow: hidden
+  &:hover
+    color: inherit
+    .project-item-img
+      &:after
+        opacity: .5
+      .btn
+        opacity: 1
+  &:focus, &:active
+    color: inherit
