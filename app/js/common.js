@@ -74,6 +74,28 @@ $(function() {
         }
     });
 
+    $('.caseclient-slider').owlCarousel({
+        loop:true,
+        margin: 15,
+        items: 4,
+        nav: true,
+        navText: ['',''],
+        responsive : {
+            0 : {
+                items: 1,
+            },
+            480 : {
+                items: 2,
+            },
+            768: {
+                items: 3,
+            },
+            992: {
+                items: 4,
+            }
+        }
+    });
+
     function heightses() {
         if ($(window).width()>=768) {
             $('.subtab-item-title').height('auto').equalHeights();
@@ -83,6 +105,8 @@ $(function() {
 
         if ($(window).width()>=481) {
             $('.project-item-title').height('auto').equalHeights();
+            $('.caseclient-item-img').height('auto').equalHeights();
+            $('.caseclient-item-title').height('auto').equalHeights();
         }
 
         $('.client-slide').height('auto').equalHeights();

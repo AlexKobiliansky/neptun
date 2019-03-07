@@ -5,6 +5,15 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+  .caseclient-slider
+    padding: 0 50px
+    .owl-nav
+      width: calc(100% - 100px)
+      button.owl-prev
+        left: -40px
+      button.owl-next
+        right: -40px
+
   .about-item
     &:nth-child(odd)
       .about-item-img

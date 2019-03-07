@@ -1,0 +1,41 @@
+.s-caseclients
+  padding: 70px 0 55px
+
+.caseclient-item
+  border: 1px solid #dfe7e9
+  border-radius: 5px
+  &-img
+    padding: 40px 25px 25px 25px
+    border-bottom: 1px solid #dfe7e9
+    display: flex
+    align-items: center
+    justify-content: center
+  &-content
+    padding: 22px 15px
+    text-align: center
+    a
+      font-size: 14px
+      font-weight: 500
+      text-decoration: underline
+      color: $accent
+      &:hover
+        text-decoration: none
+  &-title
+    font-size: 17px
+    font-weight: 500
+    margin-bottom: 12px
+
+.caseclient-slider
+  position: relative
+  .owl-nav
+    position: absolute
+    top: calc(50% - 36px)
+    width: 100%
+    button.owl-prev
+      position: absolute
+      left: -55px
+    button.owl-next
+      position: absolute
+      right: -55px
+
+
