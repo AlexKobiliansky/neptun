@@ -1,0 +1,25 @@
+.s-breadcrumbs
+  padding: 25px 0 30px
+  a
+    margin-right: 30px
+    font-size: 13px
+    color: #709fb0
+    font-weight: normal
+    +mt(.3s)
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      height: 2px
+      width: 4px
+      background-color: #709fb0!important
+      top: calc(50% - 2px)
+      right: -17px
+    &:last-child
+      color: $text
+      margin-right: 0
+      font-weight: 500
+      &:after
+        display: none
+    &:hover
+      color: $text

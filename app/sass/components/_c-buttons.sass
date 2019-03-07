@@ -59,3 +59,26 @@
   text-decoration: underline
   border-radius: 40px
   text-transform: none
+
+.btn-tomain
+  color: #fff
+  text-transform: none
+  font-size: 14px
+  background-color: #13b1ec
+  border: 1px solid #10a0d6
+  border-radius: 30px
+  padding: 10px 20px 10px 44px
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    border: 4px solid transparent
+    border-right: 6px solid #fff
+    left: 18px
+    top: 13px
+    +mt(.3s)
+  &:hover
+    background-color: #08c
+    color: #fff
+    &:before
+      border-right-color: #fff
