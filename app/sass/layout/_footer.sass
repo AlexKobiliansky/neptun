@@ -1,0 +1,71 @@
+.main-foot
+  padding-top: 200px
+  padding-bottom: 80px
+  background-image: url('../img/bg-footer.jpg')
+  +bg-cover
+  h3
+    font-size: 20px
+    font-weight: 500
+    margin-bottom: 15px
+  ul
+    li
+      a
+        font-size: 16px
+        color: #1398cc
+        display: inline-block
+        margin-bottom: 8px
+        font-weight: 500
+        &:hover
+          text-decoration: underline
+
+.copy-title
+  font-size: 26px
+  font-weight: 500
+  margin-bottom: 15px
+
+.copy-text
+  position: relative
+  font-size: 13px
+  color: #3c3c3c
+  margin-bottom: 30px
+  &:after
+    content: ''
+    position: absolute
+    height: 1px
+    width: 30px
+    background-color: $text
+    left: 0
+    bottom: -14px
+
+.copy-desc
+  font-size: 13px
+  color: #81aabb
+
+.foot-contact-item
+  font-size: 13px
+  color: #2c2c2c
+  margin-bottom: 20px
+  padding-left: 38px
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    width: 25px
+    height: 25px
+    +bg-cover
+    left: 0
+    top: 0
+  &.address
+    &:before
+      background-image: url('../img/icons/foot-address-icon.png')
+  &.phone
+    &:before
+      background-image: url('../img/icons/foot-tel-icon.png')
+  &.mail
+    &:before
+      background-image: url('../img/icons/foot-mail-icon.png')
+  a
+    color: #212121
+    +mt(.3s)
+    &:hover, &:active, &:focus
+      color: $accent
