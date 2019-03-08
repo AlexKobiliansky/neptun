@@ -1,0 +1,47 @@
+.s-how
+  +bg-cover
+  padding: 70px 0 120px
+  counter-reset: how-item
+  .section-title
+    h2
+      margin-bottom: 40px
+
+.how-content
+  font-size: 16px
+  text-align: center
+  margin-bottom: 60px
+
+.how-item
+  position: relative
+  padding-left: 80px
+  padding-top: 14px
+  margin-bottom: 85px
+  &-title
+    font-weight: 700
+    font-size: 22px
+    color: $accent
+    margin-bottom: 10px
+  &-desc
+    font-size: 13px
+  &:before
+    counter-increment: how-item
+    content: counter(how-item)
+    position: absolute
+    width: 58px
+    height: 58px
+    background-color: $accent
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 30px
+    font-weight: 700
+    color: #fff
+    left: 0
+    top: 0
+
+.how-img
+  margin-right: auto
+  margin-left: auto
+  position: relative
+  left: 30px
