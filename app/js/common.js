@@ -111,6 +111,8 @@ $(function() {
             $('.subtab-item-title').height('auto').equalHeights();
             $('.subtab-item-desc').height('auto').equalHeights();
             $('.subtab-item-img').height('auto').equalHeights();
+            $('.apply-item-title').height('auto').equalHeights();
+            $('.apply-item-desc').height('auto').equalHeights();
         }
 
         if ($(window).width()>=480) {
