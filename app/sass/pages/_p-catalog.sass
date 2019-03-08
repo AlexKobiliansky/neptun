@@ -1,0 +1,85 @@
+.sidebar
+  h3
+    position: relative
+    font-size: 25px
+    font-weight: 500
+    margin-bottom: 34px
+    &:after
+      content: ''
+      position: absolute
+      width: 38px
+      height: 3px
+      background-color: $accent
+      left: 0
+      bottom: -14px
+
+.categories
+  margin-bottom: 30px
+  li
+    margin-bottom: 15px
+    a
+      color: $text
+      font-size: 16px
+      +mt(.3s)
+      &:hover
+        color: $accent
+
+
+.banner-item
+  color: #fff
+  +bg-cover
+  padding: 22px 0 32px
+  &-status
+    line-height: 1
+    padding: 17px 17px
+    background-color: #25bfff
+    text-align: center
+    text-transform: uppercase
+    font-size: 16px
+    font-weight: 500
+    margin-bottom: 15px
+  &-title
+    padding-left: 20px
+    padding-right: 20px
+    text-align: center
+    font-size: 25px
+    font-weight: 500
+    line-height: 1.2
+    margin-bottom: 190px
+  .btn
+    display: block
+    background-color: #106ebe
+    font-size: 15px
+    text-transform: none
+    width: 176px
+    line-height: 1
+    padding: 10px 0
+    border-radius: 40px
+    margin-left: auto
+    margin-right: auto
+    color: #fff
+    &:hover
+      background-color: lighten(#106ebe, 10%)
+
+.product-item
+  margin-bottom: 60px
+  &-img
+    background-color: #eef2f4
+    padding: 40px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 15px
+  &-content
+    text-align: center
+    padding: 0 10px
+  &-title
+    font-weight: 500
+    margin-bottom: 15px
+  &-desc
+    font-size: 12px
+    margin-bottom: 25px
+    max-height: 55px
+    overflow: hidden
+    p
+      margin-bottom: 0

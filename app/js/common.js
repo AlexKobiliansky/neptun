@@ -120,6 +120,9 @@ $(function() {
             $('.caseclient-item-img').height('auto').equalHeights();
             $('.caseclient-item-title').height('auto').equalHeights();
             $('.sert-item-wrap').height('auto').equalHeights();
+            $('.product-item-img').height('auto').equalHeights();
+            $('.product-item-title').height('auto').equalHeights();
+            $('.product-item-desc').height('auto').equalHeights();
         }
 
         $('.client-slide').height('auto').equalHeights();
