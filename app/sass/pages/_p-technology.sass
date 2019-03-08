@@ -1,0 +1,36 @@
+.technology-item
+  margin-bottom: 60px
+  &-head
+    min-height: 365px
+    position: relative
+    margin-bottom: 40px
+    .item
+      height: 100%
+      width: 50%
+      position: absolute
+  &-title
+    background-color: #dff2f9
+    top: 0
+    left: 0
+    display: flex
+    align-items: center
+    padding: 70px
+    h3
+      font-size: 28px
+      font-weight: 500
+      margin-bottom: 0
+      padding-left: 33px
+      position: relative
+      line-height: 1.2
+      &:before
+        content: ''
+        position: absolute
+        height: 100%
+        width: 3px
+        background-color: $accent
+        left: 0
+        top: 0
+  &-img
+    top: 0
+    right: 0
+    +bg-cover
