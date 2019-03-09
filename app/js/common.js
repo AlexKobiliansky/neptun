@@ -1,5 +1,7 @@
 $(function() {
 
+    $('.preloader').fadeOut();
+
     $('.sm').smartmenus({});
 
     $('select').styler();
