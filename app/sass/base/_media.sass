@@ -5,6 +5,10 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .alignleft, .alignright
+    max-width: 450px
+
   .techno-intro-text
     margin-top: 0
 
@@ -56,6 +60,9 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .alignleft, .alignright
+    max-width: 350px
 
   .schema-img
     margin-bottom: 40px
@@ -114,6 +121,16 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  h1
+    font-size: 30px
+
+  .alignleft, .alignright
+    max-width: 100%
+    float: none
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 30px
+
   .s-schema
     padding-bottom: 40px
 
@@ -167,6 +184,13 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  h1
+    font-size: 24px
+    line-height: 1.2
+
+  .s-popular
+    padding-bottom: 0
 
   .checks-wrap
     margin-top: 40px
