@@ -39,6 +39,7 @@ gulp.task('styles', function() {
 gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/slick/slick.min.js',
 		'app/libs/smartmenus/jquery.smartmenus.min.js',
 		'app/libs/formstyler/jquery.formstyler.min.js',
 		'app/libs/mmenu/jquery.mmenu.all.js',

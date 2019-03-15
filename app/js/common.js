@@ -1,10 +1,13 @@
-$(function() {
+$(document).ready(function (){
 
     $('.preloader').fadeOut();
 
     $('.sm').smartmenus({});
 
     $('select').styler();
+
+
+
 
     /**
      * mobile-mnu customization
@@ -97,6 +100,92 @@ $(function() {
             }
         }
     });
+
+
+
+
+
+
+
+
+
+
+    // $('.product-slider').slick({
+    //
+    // });
+    // $('.product-nav-slider').slick({
+    //
+    // });
+
+
+    function initSlider(selector, options) {
+        if ($.fn.slick) {
+            $(selector).slick(options);
+        } else {
+            setTimeout(function() {
+                initSlider(selector, options);
+            }, 500);
+        }
+    }
+
+    var options1 = {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.product-nav-slider'
+      };
+
+    var options2 = {
+        slidesToShow: 10,
+        slidesToScroll: 1,
+        asNavFor: '.product-slider',
+        dots: false,
+        focusOnSelect: true,
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>',
+        responsive: [
+            {
+                breakpoint: 1920,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 10,
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    arrows: true,
+                    slidesToShow: 6,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 10,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: true,
+                    slidesToShow: 6,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: true,
+                    slidesToShow: 4,
+                }
+            },
+
+        ]
+    };
+
+   initSlider('.product-slider', options1);
+   initSlider('.product-nav-slider', options2);
 
 
 
@@ -223,3 +312,4 @@ $(function() {
      */
 
 });
+
