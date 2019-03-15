@@ -1,0 +1,35 @@
+.s-news
+
+.years
+  background-image: linear-gradient(to right,#90b7c6 20%,rgba(255,255,255,0) 0)
+  background-size: 10px 2px
+  background-position: bottom
+  background-repeat: repeat-x
+  display: flex
+  justify-content: space-around
+  margin-bottom: 65px
+
+.year-item
+  font-size: 18px
+  font-weight: 500
+  color: #99c0cf
+  margin-bottom: 25px
+  +mt(.3s)
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    border-radius: 50%
+    width: 18px
+    height: 18px
+    background-color: #c2dfea
+    +mt(.3s)
+    left: calc(50% - 9px)
+    bottom: -32px
+  &:hover, &.active
+    color: #13b1ec
+    &:after
+      background-color: #10a0d6
+
+.years-select-wrap
+  display: none
